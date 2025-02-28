@@ -18,7 +18,7 @@ const Portfolio = () => {
     {
       title: 'E-Commerce Platform',
       category: 'web',
-      imageUrl: 'https://images.unsplash.com/photo-1523742346641-b9a4d2da09c7',
+      imageUrl: 'https://images.unsplash.com/photo-1552664730-d307ca884978?fit=crop&w=800&h=800',
       description: 'A comprehensive e-commerce platform with advanced product filtering, user authentication, and payment processing.',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       challenge: 'Creating a seamless user experience with fast loading times and complex product filtering.',
@@ -58,7 +58,7 @@ const Portfolio = () => {
     {
       title: 'Smart Home Application',
       category: 'mobile',
-      imageUrl: 'https://images.unsplash.com/photo-1558002038-1055e2de7dfc',
+      imageUrl: 'https://images.unsplash.com/photo-1593784991095-a205069470b6?fit=crop&w=800&h=800',
       description: 'A mobile application for controlling and monitoring smart home devices with voice commands and automation.',
       technologies: ['React Native', 'Node.js', 'MongoDB', 'WebSockets'],
       challenge: 'Creating a responsive interface that could communicate with various IoT devices seamlessly.',
