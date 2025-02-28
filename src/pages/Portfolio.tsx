@@ -18,7 +18,7 @@ const Portfolio = () => {
     {
       title: 'E-Commerce Platform',
       category: 'web',
-      image: 'https://images.unsplash.com/photo-1523742346641-b9a4d2da09c7',
+      imageUrl: 'https://images.unsplash.com/photo-1523742346641-b9a4d2da09c7',
       description: 'A comprehensive e-commerce platform with advanced product filtering, user authentication, and payment processing.',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       challenge: 'Creating a seamless user experience with fast loading times and complex product filtering.',
@@ -28,7 +28,7 @@ const Portfolio = () => {
     {
       title: 'Healthcare Management System',
       category: 'software',
-      image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef',
+      imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef',
       description: 'A secure healthcare management system for clinics to manage patient records, appointments, and billing.',
       technologies: ['React', 'Django', 'PostgreSQL', 'AWS'],
       challenge: 'Ensuring data security while maintaining an intuitive user interface for healthcare professionals.',
@@ -38,7 +38,7 @@ const Portfolio = () => {
     {
       title: 'Real Estate Marketplace',
       category: 'web',
-      image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa',
+      imageUrl: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa',
       description: 'A real estate marketplace connecting buyers, sellers, and agents with advanced property search and virtual tours.',
       technologies: ['Vue.js', 'Firebase', 'Google Maps API'],
       challenge: 'Creating an engaging, interactive experience for property browsing with efficient data management.',
@@ -48,7 +48,7 @@ const Portfolio = () => {
     {
       title: 'Financial Dashboard',
       category: 'webapp',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71',
+      imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71',
       description: 'A comprehensive financial dashboard for investors to track investments, analyze performance, and generate reports.',
       technologies: ['React', 'D3.js', 'Node.js', 'MongoDB'],
       challenge: 'Displaying complex financial data in an accessible and meaningful way for users.',
@@ -58,7 +58,7 @@ const Portfolio = () => {
     {
       title: 'Smart Home Application',
       category: 'mobile',
-      image: 'https://images.unsplash.com/photo-1558002038-1055e2de7dfc',
+      imageUrl: 'https://images.unsplash.com/photo-1558002038-1055e2de7dfc',
       description: 'A mobile application for controlling and monitoring smart home devices with voice commands and automation.',
       technologies: ['React Native', 'Node.js', 'MongoDB', 'WebSockets'],
       challenge: 'Creating a responsive interface that could communicate with various IoT devices seamlessly.',
@@ -68,7 +68,7 @@ const Portfolio = () => {
     {
       title: 'Supply Chain Management',
       category: 'software',
-      image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d',
+      imageUrl: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d',
       description: 'A blockchain-based supply chain management system for tracking product origin and authenticity.',
       technologies: ['React', 'Solidity', 'Ethereum', 'Node.js'],
       challenge: 'Implementing a secure and transparent tracking system accessible to all stakeholders.',
@@ -151,7 +151,9 @@ const Portfolio = () => {
                   <PortfolioItem
                     title={project.title}
                     category={project.category}
-                    image={project.image}
+                    imageUrl={project.imageUrl}
+                    projectUrl={project.link}
+                    delay={index}
                   />
                 </motion.div>
               ))}
@@ -191,7 +193,7 @@ const Portfolio = () => {
                 {/* Project Image */}
                 <div className="h-64 md:h-80 relative">
                   <img 
-                    src={filteredProjects[selectedProject].image} 
+                    src={filteredProjects[selectedProject].imageUrl} 
                     alt={filteredProjects[selectedProject].title} 
                     className="w-full h-full object-cover rounded-t-2xl"
                   />
