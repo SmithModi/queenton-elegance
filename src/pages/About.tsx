@@ -15,30 +15,30 @@ const About = () => {
     {
       icon: <CheckCircle2 className="h-6 w-6" />,
       title: 'Excellence',
-      description: 'We strive for excellence in everything we do, from code quality to user experience.'
+      description: 'We pursue excellence in every line of code and design element, maintaining rigorous standards that exceed industry benchmarks.'
     },
     {
       icon: <Users className="h-6 w-6" />,
       title: 'Collaboration',
-      description: 'We work closely with our clients, fostering communication and shared success.'
+      description: 'Our transparent development process keeps clients involved at every stage, ensuring solutions that truly address business objectives.'
     },
     {
       icon: <Award className="h-6 w-6" />,
       title: 'Innovation',
-      description: 'We embrace cutting-edge technologies and creative approaches to solve complex problems.'
+      description: 'We constantly explore emerging technologies and methodologies to deliver forward-thinking solutions that keep our clients ahead of the curve.'
     },
     {
       icon: <Briefcase className="h-6 w-6" />,
       title: 'Integrity',
-      description: 'We conduct business with transparency, honesty, and ethical principles.'
+      description: 'Ethical business practices form the foundation of our client relationships, with clear communication and honest project assessments.'
     }
   ];
 
   const stats = [
-    { value: '25+', label: 'Team Members' },
-    { value: '100+', label: 'Projects Completed' },
-    { value: '15+', label: 'Countries Served' },
-    { value: '8+', label: 'Years of Experience' }
+    { value: '35+', label: 'Technology Experts' },
+    { value: '120+', label: 'Projects Delivered' },
+    { value: '18+', label: 'Countries Served' },
+    { value: '9+', label: 'Years of Excellence' }
   ];
 
   return (
@@ -59,10 +59,10 @@ const About = () => {
                 About Queenton Technology
               </div>
               <h1 className="text-4xl md:text-5xl font-semibold mb-6">
-                Crafting Digital Excellence Since 2015
+                Digital Innovation Architects
               </h1>
               <p className="text-muted-foreground mb-8 text-lg">
-                We are a team of passionate developers, designers, and strategists dedicated to creating exceptional digital experiences. Our journey began with a simple mission: to help businesses harness the power of technology to grow and thrive in the digital landscape.
+                Founded in 2015, Queenton Technology has evolved from a specialized development studio into a comprehensive digital solutions provider. Our multidisciplinary team of technologists, designers, and strategists collaborate to transform complex business challenges into elegant, scalable solutions that drive measurable results.
               </p>
               
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-12">
@@ -114,13 +114,13 @@ const About = () => {
                 Our Story
               </div>
               <h2 className="text-3xl font-semibold mb-6">
-                How We Started
+                The Queenton Journey
               </h2>
               <p className="text-muted-foreground mb-4">
-                Queenton Technology was founded by a group of tech enthusiasts who saw a gap in the market for high-quality, user-focused digital solutions. What started as a small web development agency has evolved into a full-service technology company serving clients across the globe.
+                What began as a pioneering venture by five technology visionaries has grown into a global digital solutions powerhouse. Our founders identified a significant gap in the market for truly user-centric, technically excellent digital products that could evolve alongside rapidly changing business requirements.
               </p>
               <p className="text-muted-foreground">
-                Over the years, we've expanded our expertise to include software development, ERP and CRM solutions, web applications, and blockchain technology, always staying at the forefront of industry trends and innovations to deliver the best possible solutions to our clients.
+                Today, Queenton Technology stands at the forefront of digital innovation, with specialized teams delivering transformative solutions across software development, web engineering, enterprise systems, interactive applications, and blockchain technologies. Our evolution reflects our commitment to continuous learning and adaptation in the ever-changing technology landscape.
               </p>
             </motion.div>
             
@@ -134,13 +134,13 @@ const About = () => {
                 Our Vision
               </div>
               <h2 className="text-3xl font-semibold mb-6">
-                Where We're Going
+                Technology With Purpose
               </h2>
               <p className="text-muted-foreground mb-4">
-                Our vision is to be a global leader in digital innovation, recognized for our commitment to excellence, creativity, and client satisfaction. We aim to create technology that not only solves problems but also inspires and empowers users.
+                At Queenton, we envision a future where technology seamlessly enhances human experiences, business operations, and global connectivity. We're committed to pioneering solutions that not only address current challenges but anticipate future needs, positioning our clients at the cutting edge of their industries.
               </p>
               <p className="text-muted-foreground">
-                We believe in the transformative power of technology and its ability to enhance businesses and lives. As we continue to grow, we remain committed to our core values and to delivering solutions that exceed expectations, drive results, and stand the test of time.
+                Our strategic roadmap emphasizes sustainable development practices, enhanced security frameworks, and increasingly intelligent systems that leverage AI and machine learning to deliver predictive capabilities. By maintaining our focus on both technical excellence and user experience, we create digital assets that deliver exceptional value throughout their lifecycle.
               </p>
             </motion.div>
           </div>
@@ -164,7 +164,7 @@ const About = () => {
               Our Core Values
             </h2>
             <p className="text-muted-foreground">
-              At Queenton Technology, our values guide everything we do. They shape our culture, inform our decisions, and define how we work with our clients and each other.
+              These principles guide our strategic decisions, shape our corporate culture, and define our approach to client partnerships and technical implementation.
             </p>
           </motion.div>
           
@@ -201,50 +201,50 @@ const About = () => {
               Our Journey
             </div>
             <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-              Company Timeline
+              Company Milestones
             </h2>
             <p className="text-muted-foreground">
-              From humble beginnings to industry leadership, explore the key milestones that have shaped Queenton Technology.
+              Tracing our evolution from an ambitious startup to an industry leader in digital innovation.
             </p>
           </motion.div>
           
           <div className="relative mt-20">
             <TimelineItem
               year="2015"
-              title="Company Founded"
-              description="Queenton Technology was established with a focus on web development and design services."
+              title="Foundation"
+              description="Queenton Technology launched with a specialized focus on bespoke web development solutions for startups and mid-market businesses."
               isLeft={false}
               delay={0}
             />
             
             <TimelineItem
               year="2017"
-              title="Expansion into Software Development"
-              description="We expanded our services to include custom software development, growing our team and expertise."
+              title="Technology Portfolio Expansion"
+              description="Broadened our technical capabilities to include comprehensive software development services and advanced architectural consulting."
               isLeft={true}
               delay={1}
             />
             
             <TimelineItem
               year="2019"
-              title="Introduction of ERP & CRM Solutions"
-              description="Launched our enterprise solutions division, offering integrated systems for business management."
+              title="Enterprise Solutions Division"
+              description="Launched dedicated ERP and CRM implementation teams, integrating specialized enterprise systems expertise into our service portfolio."
               isLeft={false}
               delay={2}
             />
             
             <TimelineItem
               year="2020"
-              title="Global Reach Milestone"
-              description="Achieved our goal of serving clients across 10+ countries, establishing a truly global presence."
+              title="Global Market Penetration"
+              description="Established strategic partnerships in APAC and EMEA regions, doubling our global client base and diversifying our industry expertise."
               isLeft={true}
               delay={3}
             />
             
             <TimelineItem
               year="2022"
-              title="Blockchain & Web3 Innovation"
-              description="Embraced blockchain technology, developing cutting-edge decentralized applications and Web3 solutions."
+              title="Web3 & Blockchain Innovation"
+              description="Created our dedicated Emerging Technologies division focused on Web3 architecture, blockchain solutions, and decentralized applications."
               isLeft={false}
               delay={4}
             />
@@ -252,7 +252,7 @@ const About = () => {
             <TimelineItem
               year="2023"
               title="Industry Recognition"
-              description="Received multiple industry awards for our innovative approach and exceptional client results."
+              description="Recognized with multiple industry awards for technical innovation, design excellence, and transformative client outcomes."
               isLeft={true}
               delay={5}
             />
@@ -274,27 +274,27 @@ const About = () => {
                 Our Team
               </div>
               <h2 className="text-3xl md:text-4xl font-semibold mb-6">
-                The Minds Behind Queenton
+                Technology Specialists
               </h2>
               <p className="text-primary-foreground/80 mb-8">
-                Our team consists of talented developers, designers, project managers, and strategists who bring diverse skills and perspectives to every project. We're united by our passion for technology and our commitment to creating exceptional digital experiences.
+                Our multidisciplinary team combines deep technical expertise with creative problem-solving capabilities. We've carefully assembled specialists across frontend and backend development, UX/UI design, DevOps, quality assurance, and project management to create fully-integrated delivery units.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start space-x-3">
                   <CheckCircle2 className="h-6 w-6 text-white mt-0.5 shrink-0" />
-                  <span>Specialized expertise across multiple technology domains</span>
+                  <span>Technical leadership averaging 12+ years of specialized experience</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle2 className="h-6 w-6 text-white mt-0.5 shrink-0" />
-                  <span>Continuous learning and professional development</span>
+                  <span>Continuous professional development through our Queenton Academy program</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle2 className="h-6 w-6 text-white mt-0.5 shrink-0" />
-                  <span>Collaborative, supportive work environment</span>
+                  <span>Cross-functional collaboration enabling comprehensive solution architecture</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <CheckCircle2 className="h-6 w-6 text-white mt-0.5 shrink-0" />
-                  <span>Client-focused approach with clear communication</span>
+                  <span>Domain-specific expertise across finance, healthcare, retail, and manufacturing</span>
                 </li>
               </ul>
             </motion.div>
@@ -342,7 +342,7 @@ const About = () => {
               Growth & Performance
             </h2>
             <p className="text-muted-foreground">
-              We measure our success by the results we deliver to our clients. Here's a snapshot of our performance over the years.
+              Measuring our success through client outcomes and quantifiable results that demonstrate our technological impact.
             </p>
           </motion.div>
           
@@ -357,8 +357,8 @@ const About = () => {
               <div className="text-primary mb-4">
                 <BarChart className="h-12 w-12 mx-auto" />
               </div>
-              <h3 className="text-2xl font-semibold mb-2">200%</h3>
-              <p className="text-muted-foreground">Average Client Growth</p>
+              <h3 className="text-2xl font-semibold mb-2">230%</h3>
+              <p className="text-muted-foreground">Average Client ROI</p>
             </motion.div>
             
             <motion.div
@@ -371,8 +371,8 @@ const About = () => {
               <div className="text-primary mb-4">
                 <Users className="h-12 w-12 mx-auto" />
               </div>
-              <h3 className="text-2xl font-semibold mb-2">98%</h3>
-              <p className="text-muted-foreground">Client Satisfaction Rate</p>
+              <h3 className="text-2xl font-semibold mb-2">97%</h3>
+              <p className="text-muted-foreground">Client Retention Rate</p>
             </motion.div>
             
             <motion.div
@@ -385,8 +385,8 @@ const About = () => {
               <div className="text-primary mb-4">
                 <Award className="h-12 w-12 mx-auto" />
               </div>
-              <h3 className="text-2xl font-semibold mb-2">15+</h3>
-              <p className="text-muted-foreground">Industry Awards</p>
+              <h3 className="text-2xl font-semibold mb-2">18+</h3>
+              <p className="text-muted-foreground">Industry Recognitions</p>
             </motion.div>
           </div>
         </div>
@@ -404,17 +404,17 @@ const About = () => {
               className="space-y-6"
             >
               <div className="inline-block px-3 py-1 rounded-full bg-accent text-sm font-medium mb-4">
-                Join Us On Our Journey
+                Partner With Us
               </div>
               <h2 className="text-3xl md:text-4xl font-semibold">
-                Ready to transform your digital presence?
+                Let's Transform Your Vision Into Reality
               </h2>
               <p className="text-muted-foreground text-lg">
-                Whether you're looking to develop a new product, enhance an existing system, or explore emerging technologies, we're here to help you succeed.
+                Whether you're launching a new digital product, enhancing an existing system, or exploring emerging technologies, our team is ready to deliver solutions that exceed expectations.
               </p>
               <div className="pt-4">
                 <a href="/contact" className="button-primary">
-                  Get in Touch
+                  Start Your Project
                 </a>
               </div>
             </motion.div>

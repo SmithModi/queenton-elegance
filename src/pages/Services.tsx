@@ -17,71 +17,71 @@ const Services = () => {
     {
       icon: <Code className="h-8 w-8" />,
       title: 'Software Development',
-      shortDescription: 'Custom software solutions tailored to your business needs, from concept to deployment.',
-      fullDescription: 'Our expert team develops custom software solutions that address your unique business challenges. From needs analysis to deployment and maintenance, we handle the entire development lifecycle. We specialize in creating scalable, secure, and user-friendly applications using the latest technologies and best practices.',
+      shortDescription: 'Enterprise-grade software solutions engineered for performance, security, and scalability.',
+      fullDescription: 'Our software development services deliver tailor-made solutions that address complex business challenges through innovative architecture and clean, maintainable code. From requirements analysis to deployment and beyond, we manage the complete software lifecycle with meticulous attention to quality and performance optimization.',
       image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7',
       features: [
-        'Custom application development',
-        'Legacy system modernization',
+        'Microservices architecture design',
+        'Enterprise application development',
         'API development and integration',
-        'Mobile app development',
-        'Quality assurance and testing'
+        'Cloud-native application development',
+        'Performance optimization and refactoring'
       ]
     },
     {
       icon: <Globe className="h-8 w-8" />,
       title: 'Website Development',
-      shortDescription: 'Responsive, high-performance websites with elegant user interfaces and seamless experiences.',
-      fullDescription: 'We create stunning, responsive websites that leave a lasting impression on your visitors. Our websites are not only visually appealing but also optimized for performance, SEO, and conversion. We focus on creating intuitive user experiences that guide visitors toward your business goals.',
+      shortDescription: 'High-impact digital experiences with pixel-perfect design and optimized performance.',
+      fullDescription: 'We craft visually stunning, responsive websites that establish your digital presence with authority. Our development process emphasizes intuitive user experiences, optimized performance metrics, and conversion-focused design elements. Each website is built with scalability in mind, allowing for seamless future expansion.',
       image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d',
       features: [
-        'Responsive web design',
-        'E-commerce websites',
-        'Content management systems',
-        'Landing page optimization',
-        'Website maintenance and support'
+        'Responsive design with mobile-first approach',
+        'E-commerce & transactional systems',
+        'Content management implementation',
+        'SEO optimization & technical performance',
+        'Accessibility compliance (WCAG 2.1)'
       ]
     },
     {
       icon: <Database className="h-8 w-8" />,
       title: 'ERP & CRM Solutions',
-      shortDescription: 'Integrated systems to streamline operations and enhance customer relationship management.',
-      fullDescription: 'Our ERP and CRM solutions help businesses streamline operations, improve efficiency, and enhance customer relationships. We implement tailored systems that integrate with your existing infrastructure, providing real-time insights and automating key processes to drive growth and productivity.',
+      shortDescription: 'Integrated business systems that streamline operations and enhance customer insights.',
+      fullDescription: 'Our enterprise solution specialists implement and customize ERP and CRM systems that connect siloed operations, automate workflows, and centralize critical business data. We focus on seamless integration with existing infrastructure while providing intuitive interfaces that encourage organization-wide adoption.',
       image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334',
       features: [
-        'Custom ERP implementation',
-        'CRM deployment and integration',
-        'Business process automation',
-        'Data migration and management',
-        'User training and support'
+        'Business process analysis & optimization',
+        'Custom module development',
+        'Legacy system integration',
+        'Data migration & transformation',
+        'Training & continuous improvement'
       ]
     },
     {
       icon: <Layout className="h-8 w-8" />,
       title: 'Web Applications',
-      shortDescription: 'Sophisticated web applications with modern frameworks and intuitive user experiences.',
-      fullDescription: 'We develop powerful web applications that enhance your business capabilities and provide value to your users. Using modern frameworks and technologies, we create scalable, feature-rich solutions that work seamlessly across devices and platforms, delivering exceptional user experiences.',
+      shortDescription: 'Feature-rich interactive applications that deliver exceptional user experiences.',
+      fullDescription: 'Our web application development combines technical excellence with intuitive design to create powerful, interactive digital tools. We leverage modern frameworks and architectural patterns to build responsive, secure, and scalable applications that handle complex business logic while providing seamless user experiences.',
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085',
       features: [
-        'Progressive web applications',
-        'Single-page applications',
-        'Real-time data processing',
-        'Cloud-based solutions',
-        'Cross-platform compatibility'
+        'Single-page application (SPA) development',
+        'Progressive Web Apps (PWAs)',
+        'Real-time data processing & visualization',
+        'Complex form management & validation',
+        'Authentication & authorization systems'
       ]
     },
     {
       icon: <Cpu className="h-8 w-8" />,
       title: 'Blockchain Solutions',
-      shortDescription: 'Cutting-edge Web3 websites and decentralized applications built on blockchain technology.',
-      fullDescription: 'We help businesses leverage blockchain technology to enhance security, transparency, and efficiency. Our Web3 solutions include decentralized applications, smart contracts, and integration with existing systems. We stay at the forefront of this rapidly evolving technology to deliver innovative solutions.',
+      shortDescription: 'Next-generation Web3 applications and decentralized systems for modern businesses.',
+      fullDescription: 'Our blockchain specialists design and implement decentralized solutions that leverage distributed ledger technology to enhance security, transparency, and efficiency. From smart contract development to full dApp implementations, we help organizations navigate the complexities of Web3 while delivering practical business applications.',
       image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1',
       features: [
-        'Decentralized application (dApp) development',
-        'Smart contract implementation',
-        'Web3 website development',
-        'NFT marketplace creation',
-        'Blockchain integration with existing systems'
+        'Smart contract development & auditing',
+        'Decentralized application (dApp) creation',
+        'Tokenization & NFT implementation',
+        'Private/permissioned blockchain networks',
+        'Web3 integration with existing systems'
       ]
     },
   ];
@@ -110,7 +110,7 @@ const Services = () => {
               Comprehensive Technology Solutions
             </h1>
             <p className="text-muted-foreground mb-8 text-lg">
-              Discover our range of services designed to help your business thrive in the digital landscape. From custom software to cutting-edge blockchain solutions, we have the expertise to bring your vision to life.
+              Discover our specialized service offerings designed to transform your business challenges into technology-driven advantages. Click on any service to explore detailed capabilities.
             </p>
           </motion.div>
         </div>
@@ -198,7 +198,7 @@ const Services = () => {
                   </p>
                   
                   <div className="space-y-3">
-                    <h3 className="text-lg font-medium">Key Features</h3>
+                    <h3 className="text-lg font-medium">Core Capabilities</h3>
                     <ul className="space-y-2">
                       {services[selectedService].features.map((feature, idx) => (
                         <li key={idx} className="flex items-start">
@@ -215,7 +215,7 @@ const Services = () => {
                   
                   <div className="pt-4">
                     <a href="/contact" className="button-primary w-full md:w-auto justify-center flex items-center space-x-2">
-                      <span>Contact Us</span>
+                      <span>Discuss Your Project</span>
                       <ArrowRight className="h-4 w-4" />
                     </a>
                   </div>
@@ -237,22 +237,22 @@ const Services = () => {
             className="text-center max-w-3xl mx-auto mb-16"
           >
             <div className="inline-block px-3 py-1 rounded-full bg-accent text-sm font-medium mb-4">
-              How We Work
+              Our Methodology
             </div>
             <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-              Our Development Process
+              Strategic Development Process
             </h2>
             <p className="text-muted-foreground">
-              We follow a structured, collaborative approach to ensure that every project is delivered on time, within budget, and to the highest standards of quality.
+              Our proven four-phase approach combines technical expertise with business acumen to deliver solutions that address both immediate needs and long-term objectives.
             </p>
           </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { number: '01', title: 'Discovery', description: 'We start by understanding your business needs and project requirements.' },
-              { number: '02', title: 'Planning', description: 'We create a detailed roadmap with timelines, milestones, and deliverables.' },
-              { number: '03', title: 'Development', description: 'Our team builds your solution using agile methodologies and regular updates.' },
-              { number: '04', title: 'Delivery', description: 'We deploy your solution and provide ongoing support and maintenance.' }
+              { number: '01', title: 'Discovery & Analysis', description: 'Comprehensive assessment of requirements, constraints, and opportunities to establish project parameters.' },
+              { number: '02', title: 'Architecture & Planning', description: 'Strategic solution design with technical roadmapping, resource allocation, and milestone definition.' },
+              { number: '03', title: 'Agile Implementation', description: 'Iterative development with continuous integration, regular client reviews, and quality assurance.' },
+              { number: '04', title: 'Deployment & Evolution', description: 'Production launch with performance monitoring, ongoing maintenance, and continuous improvement.' }
             ].map((step, index) => (
               <motion.div
                 key={index}
@@ -286,13 +286,13 @@ const Services = () => {
             className="text-center max-w-3xl mx-auto mb-16"
           >
             <div className="inline-block px-3 py-1 rounded-full bg-secondary text-sm font-medium mb-4">
-              Our Tech Stack
+              Technology Expertise
             </div>
             <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-              Technologies We Use
+              Our Technical Stack
             </h2>
             <p className="text-muted-foreground">
-              We work with a wide range of modern technologies to deliver robust, scalable, and future-proof solutions.
+              We strategically select technologies that provide optimal performance, security, and scalability for each unique project requirement.
             </p>
           </motion.div>
           
@@ -310,7 +310,7 @@ const Services = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
                 viewport={{ once: true }}
-                className="bg-card rounded-lg p-4 border border-border shadow-sm text-center"
+                className="bg-card rounded-lg p-4 border border-border shadow-sm text-center hover:shadow-md hover:-translate-y-1 transition-all duration-300"
               >
                 {tech}
               </motion.div>
@@ -331,17 +331,17 @@ const Services = () => {
               className="space-y-6"
             >
               <h2 className="text-3xl md:text-4xl font-semibold">
-                Ready to start your project?
+                Ready to transform your business?
               </h2>
               <p className="text-primary-foreground/80 text-lg">
-                Contact us today for a free consultation and let us help you bring your vision to life.
+                Schedule a consultation with our solutions architects to discuss your unique technology requirements and discover how Queenton can accelerate your digital initiatives.
               </p>
               <div className="pt-4">
                 <a 
                   href="/contact" 
                   className="px-8 py-4 rounded-lg bg-white text-primary font-medium hover:bg-white/90 transition-all hover:translate-y-[-2px] active:translate-y-0 inline-block"
                 >
-                  Get in Touch
+                  Schedule Consultation
                 </a>
               </div>
             </motion.div>
