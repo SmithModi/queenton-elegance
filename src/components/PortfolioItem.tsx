@@ -58,10 +58,6 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
             target="_blank" 
             rel="noopener noreferrer"
             className="mt-4 inline-flex items-center text-white/90 hover:text-white font-medium group"
-            onClick={(e) => {
-              e.preventDefault();
-              window.open(projectUrl, '_blank');
-            }}
           >
             <span className="transition-all duration-300 group-hover:mr-2">View Project</span>
             <ExternalLink className="h-4 w-4 transition-all duration-300 group-hover:translate-x-1" />
