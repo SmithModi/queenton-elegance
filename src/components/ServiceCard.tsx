@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 interface ServiceCardProps {
   title: string;

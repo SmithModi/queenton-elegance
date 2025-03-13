@@ -1,8 +1,7 @@
-
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ArrowRight, Code, Layout, Database, Cpu, Palette, BarChart3 } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowRight, Code, Layout, Database, Cpu, Palette, BarChart3, X } from 'lucide-react';
 import ServiceCard from '@/components/ServiceCard';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -12,33 +11,84 @@ const Index: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const [selectedService, setSelectedService] = useState<number | null>(null);
+
   const services = [
     {
       icon: <Code className="h-8 w-8" />,
       title: 'Web Development',
       description: 'Custom, responsive websites with elegant user interfaces and seamless experiences.',
+      fullDescription: 'We create stunning, responsive websites that leave a lasting impression on your visitors. Our websites are not only visually appealing but also optimized for performance, SEO, and conversion. We focus on creating intuitive user experiences that guide visitors toward your business goals.',
+      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d',
+      features: [
+        'Responsive web design',
+        'E-commerce websites',
+        'Content management systems',
+        'Landing page optimization',
+        'Website maintenance and support'
+      ]
     },
     {
       icon: <Database className="h-8 w-8" />,
       title: 'ERP Development',
       description: 'Integrated systems to streamline operations and enhance business efficiency.',
+      fullDescription: 'Our ERP solutions help businesses streamline operations, improve efficiency, and enhance overall productivity. We implement tailored systems that integrate with your existing infrastructure, providing real-time insights and automating key processes to drive growth and efficiency.',
+      image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334',
+      features: [
+        'Custom ERP implementation',
+        'Business process automation',
+        'Data migration and management',
+        'Integration with existing systems',
+        'User training and support'
+      ]
     },
     {
       icon: <Palette className="h-8 w-8" />,
       title: 'UI/UX Development',
       description: 'Human-centered designs that create intuitive, engaging user experiences.',
+      fullDescription: 'We blend creativity with functionality to create beautiful, intuitive designs that delight your users. Our UI/UX development focuses on user-centered design principles that enhance usability, accessibility, and overall satisfaction while maintaining your brand identity.',
+      image: 'https://images.unsplash.com/photo-1541462608143-67571c6738dd',
+      features: [
+        'User research and persona development',
+        'Wireframing and prototyping',
+        'Visual design and branding',
+        'Usability testing',
+        'Design system creation'
+      ]
     },
     {
       icon: <Layout className="h-8 w-8" />,
       title: 'Software Development',
       description: 'Custom software solutions tailored to your business needs from concept to deployment.',
+      fullDescription: 'Our expert team develops custom software solutions that address your unique business challenges. From needs analysis to deployment and maintenance, we handle the entire development lifecycle. We specialize in creating scalable, secure, and user-friendly applications using the latest technologies and best practices.',
+      image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7',
+      features: [
+        'Custom application development',
+        'Legacy system modernization',
+        'API development and integration',
+        'Mobile app development',
+        'Quality assurance and testing'
+      ]
     },
     {
       icon: <BarChart3 className="h-8 w-8" />,
       title: 'Running Ads',
       description: 'Strategic digital advertising campaigns that drive traffic and increase conversions.',
+      fullDescription: 'We create and manage digital advertising campaigns that put your business in front of the right audience. Our data-driven approach ensures optimal use of your advertising budget, focusing on channels and strategies that deliver the best ROI for your specific goals.',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71',
+      features: [
+        'Google Ads management',
+        'Social media advertising',
+        'Display and retargeting campaigns',
+        'Performance tracking and analytics',
+        'Budget optimization'
+      ]
     },
   ];
+
+  const closeServiceDetail = () => {
+    setSelectedService(null);
+  };
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -161,6 +211,7 @@ const Index: React.FC = () => {
                 description={service.description}
                 icon={service.icon}
                 delay={index}
+                onClick={() => setSelectedService(index)}
               />
             ))}
           </div>
@@ -172,6 +223,91 @@ const Index: React.FC = () => {
           </div>
         </div>
       </section>
+      
+      {/* Service Details Modal */}
+      <AnimatePresence>
+        {selectedService !== null && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-background/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+            onClick={closeServiceDetail}
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.3 }}
+              className="bg-card rounded-2xl shadow-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Close Button */}
+              <button 
+                onClick={closeServiceDetail}
+                className="absolute top-6 right-6 text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="Close"
+              >
+                <X className="h-6 w-6" />
+              </button>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2">
+                {/* Image */}
+                <div className="h-64 md:h-full relative">
+                  <img 
+                    src={services[selectedService].image} 
+                    alt={services[selectedService].title} 
+                    className="w-full h-full object-cover rounded-tl-2xl rounded-tr-2xl md:rounded-tr-none md:rounded-bl-2xl"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end p-6 md:hidden">
+                    <h2 className="text-white text-2xl font-semibold">
+                      {services[selectedService].title}
+                    </h2>
+                  </div>
+                </div>
+                
+                {/* Content */}
+                <div className="p-8 space-y-6">
+                  <div className="hidden md:block text-primary mb-4">
+                    {services[selectedService].icon}
+                  </div>
+                  
+                  <h2 className="text-2xl md:text-3xl font-semibold hidden md:block">
+                    {services[selectedService].title}
+                  </h2>
+                  
+                  <p className="text-muted-foreground">
+                    {services[selectedService].fullDescription}
+                  </p>
+                  
+                  <div className="space-y-3">
+                    <h3 className="text-lg font-medium">Key Features</h3>
+                    <ul className="space-y-2">
+                      {services[selectedService].features.map((feature, idx) => (
+                        <li key={idx} className="flex items-start">
+                          <div className="mr-3 mt-1 text-primary">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12.25 3.5L5.25 10.5L1.75 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                          </div>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  <div className="pt-4">
+                    <Link to="/contact" className="button-primary w-full md:w-auto justify-center flex items-center space-x-2">
+                      <span>Contact Us</span>
+                      <ArrowRight className="h-4 w-4" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
       
       {/* CTA Section */}
       <section className="py-24 bg-primary text-primary-foreground">
