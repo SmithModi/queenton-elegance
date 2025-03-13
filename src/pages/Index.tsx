@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Code, Globe, Layout, Database, Cpu } from 'lucide-react';
+import { ArrowRight, Code, Layout, Database, Cpu, Palette, BarChart3 } from 'lucide-react';
 import ServiceCard from '@/components/ServiceCard';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -15,28 +15,28 @@ const Index: React.FC = () => {
   const services = [
     {
       icon: <Code className="h-8 w-8" />,
-      title: 'Software Development',
-      description: 'Custom software solutions tailored to your business needs, from concept to deployment.',
-    },
-    {
-      icon: <Globe className="h-8 w-8" />,
-      title: 'Website Development',
-      description: 'Responsive, high-performance websites with elegant user interfaces and seamless experiences.',
+      title: 'Web Development',
+      description: 'Custom, responsive websites with elegant user interfaces and seamless experiences.',
     },
     {
       icon: <Database className="h-8 w-8" />,
-      title: 'ERP & CRM Solutions',
-      description: 'Integrated systems to streamline operations and enhance customer relationship management.',
+      title: 'ERP Development',
+      description: 'Integrated systems to streamline operations and enhance business efficiency.',
+    },
+    {
+      icon: <Palette className="h-8 w-8" />,
+      title: 'UI/UX Development',
+      description: 'Human-centered designs that create intuitive, engaging user experiences.',
     },
     {
       icon: <Layout className="h-8 w-8" />,
-      title: 'Web Applications',
-      description: 'Sophisticated web applications with modern frameworks and intuitive user experiences.',
+      title: 'Software Development',
+      description: 'Custom software solutions tailored to your business needs from concept to deployment.',
     },
     {
-      icon: <Cpu className="h-8 w-8" />,
-      title: 'Blockchain Solutions',
-      description: 'Cutting-edge Web3 websites and decentralized applications built on blockchain technology.',
+      icon: <BarChart3 className="h-8 w-8" />,
+      title: 'Running Ads',
+      description: 'Strategic digital advertising campaigns that drive traffic and increase conversions.',
     },
   ];
 
@@ -58,13 +58,13 @@ const Index: React.FC = () => {
             className="space-y-6"
           >
             <div className="inline-block px-3 py-1 rounded-full bg-secondary text-sm font-medium mb-2 animate-float">
-              Innovative Technology Solutions
+              Crafting Elegant Digital Experiences
             </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tight max-w-4xl mx-auto">
-              Transforming Ideas Into <span className="text-primary">Digital Reality</span>
+              Bringing Your Vision To <span className="text-primary">Digital Life</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              We craft elegant, user-centric software solutions that drive business growth and enhance user experiences.
+              At Something Media, we specialize in crafting elegant, animated websites that captivate and engage.
             </p>
             
             <div className="flex flex-wrap justify-center gap-4 pt-8">
@@ -97,13 +97,13 @@ const Index: React.FC = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-semibold mb-6">
-                We Craft Digital Experiences That Matter
+                We Create Digital Experiences That Matter
               </h2>
               <p className="text-muted-foreground mb-8">
-                Queenton Technology is a premium software and web development company dedicated to creating exceptional digital solutions. We combine technical expertise with innovative design to deliver products that stand out.
+                With 2 years of expertise, we blend creativity and technical precision to create visually stunning, intuitive designs that reflect your brand's identity.
               </p>
               <p className="text-muted-foreground mb-8">
-                Our team of skilled developers, designers, and strategists works collaboratively to transform your vision into reality, ensuring each project exceeds expectations and delivers measurable results.
+                Whether launching or revamping a site, we bring your vision to life with style and impact. Our team is dedicated to creating websites that stand out in today's digital landscape.
               </p>
               <Link to="/about" className="inline-flex items-center text-primary font-medium group">
                 <span className="transition-all duration-300 group-hover:mr-2">Learn more about us</span>
@@ -119,11 +119,11 @@ const Index: React.FC = () => {
               className="relative"
             >
               <div className="aspect-video rounded-2xl overflow-hidden shadow-lg">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Team working on code" className="w-full h-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" alt="Web development" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-background rounded-lg p-4 shadow-lg max-w-xs">
                 <p className="font-medium text-lg">
-                  "Our mission is to create technology that empowers and inspires."
+                  "We create technology that empowers and inspires."
                 </p>
               </div>
             </motion.div>
@@ -148,7 +148,7 @@ const Index: React.FC = () => {
                 Our Services
               </h2>
               <p className="text-muted-foreground">
-                We provide comprehensive technology solutions tailored to meet the unique needs of your business, helping you stay ahead in today's digital landscape.
+                We provide comprehensive technology solutions tailored to meet the unique needs of your business, helping you stand out in today's digital world.
               </p>
             </motion.div>
           </div>
@@ -188,7 +188,7 @@ const Index: React.FC = () => {
                 Ready to transform your ideas into reality?
               </h2>
               <p className="text-primary-foreground/80 text-lg">
-                Contact us today to discuss your project and discover how Queenton Technology can help you achieve your digital goals.
+                Contact us today to discuss your project and discover how Something Media can help you achieve your digital goals.
               </p>
               <div className="pt-4">
                 <Link 

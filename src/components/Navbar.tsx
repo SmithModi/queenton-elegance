@@ -49,8 +49,13 @@ const Navbar: React.FC = () => {
     <nav className={navClasses}>
       <div className="max-container flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold tracking-tight">
-          Queenton
+        <Link to="/" className="flex items-center">
+          <img 
+            src="/lovable-uploads/8f015237-5303-4a48-90f7-3fb8bf7354dc.png" 
+            alt="Something Media Logo" 
+            className="h-10 w-auto mr-2"
+          />
+          <span className="text-xl font-bold tracking-tight">Something Media</span>
         </Link>
         
         {/* Desktop Menu */}

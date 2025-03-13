@@ -12,7 +12,14 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold">Queenton Technology</h3>
+            <div className="flex items-center">
+              <img 
+                src="/lovable-uploads/8f015237-5303-4a48-90f7-3fb8bf7354dc.png" 
+                alt="Something Media Logo" 
+                className="h-8 w-auto mr-2"
+              />
+              <h3 className="text-xl font-semibold">Something Media</h3>
+            </div>
             <p className="max-w-xs">
               Elevating digital experiences through innovative technology solutions and modern design.
             </p>
@@ -59,19 +66,19 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-semibold">Services</h3>
             <ul className="space-y-2">
               <li>
+                <Link to="/services" className="hover:text-primary transition-colors">Web Development</Link>
+              </li>
+              <li>
+                <Link to="/services" className="hover:text-primary transition-colors">ERP Development</Link>
+              </li>
+              <li>
+                <Link to="/services" className="hover:text-primary transition-colors">UI/UX Development</Link>
+              </li>
+              <li>
                 <Link to="/services" className="hover:text-primary transition-colors">Software Development</Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-primary transition-colors">Website Development</Link>
-              </li>
-              <li>
-                <Link to="/services" className="hover:text-primary transition-colors">ERP & CRM Solutions</Link>
-              </li>
-              <li>
-                <Link to="/services" className="hover:text-primary transition-colors">Web Applications</Link>
-              </li>
-              <li>
-                <Link to="/services" className="hover:text-primary transition-colors">Blockchain & Web3</Link>
+                <Link to="/services" className="hover:text-primary transition-colors">Running Ads</Link>
               </li>
             </ul>
           </div>
@@ -82,7 +89,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0" />
-                <span>123 Tech Avenue, Silicon Valley, CA</span>
+                <span>123 Design Avenue, Creative Valley, CA</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
@@ -90,7 +97,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <a href="mailto:info@queenton.com" className="hover:text-primary transition-colors">info@queenton.com</a>
+                <a href="mailto:info@something.media" className="hover:text-primary transition-colors">info@something.media</a>
               </li>
             </ul>
           </div>
@@ -98,7 +105,7 @@ const Footer: React.FC = () => {
         
         {/* Bottom Bar */}
         <div className="pt-8 mt-8 border-t border-border flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {currentYear} Queenton Technology. All rights reserved.</p>
+          <p>&copy; {currentYear} Something Media. All rights reserved.</p>
           <div className="mt-4 md:mt-0 flex space-x-6">
             <Link to="/privacy" className="text-sm hover:text-primary transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="text-sm hover:text-primary transition-colors">Terms of Service</Link>
