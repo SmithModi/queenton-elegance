@@ -117,13 +117,13 @@ const Contact = () => {
     const marker = new window.google.maps.Marker({
       position: location,
       map: map,
-      title: 'Queenton Technology'
+      title: 'Something Media'
     });
     
     // @ts-ignore
     const infoWindow = new window.google.maps.InfoWindow({
       content: `<div style="padding: 10px; max-width: 200px;">
-                  <h3 style="margin: 0 0 5px; font-weight: bold;">Queenton Technology</h3>
+                  <h3 style="margin: 0 0 5px; font-weight: bold;">Something Media</h3>
                   <p style="margin: 0;">123 Tech Avenue, New York, NY 10001</p>
                 </div>`
     });
