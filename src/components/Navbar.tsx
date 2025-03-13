@@ -39,11 +39,12 @@ const Navbar: React.FC = () => {
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Portfolio', path: '/portfolio' },
+    { name: 'Clients', path: '/clients' },
     { name: 'Contact', path: '/contact' },
   ];
   
   const navClasses = `fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 py-3 transition-all duration-300 backdrop-blur-md
-    ${isScrolled ? 'bg-white/80 dark:bg-queenton-800/80 shadow-sm' : 'bg-transparent'}`;
+    ${isScrolled ? 'bg-queenton-800/90 dark:bg-queenton-900/90 shadow-sm' : 'bg-transparent'}`;
   
   return (
     <nav className={navClasses}>
@@ -55,7 +56,7 @@ const Navbar: React.FC = () => {
             alt="Something Media Logo" 
             className="h-10 w-auto mr-2"
           />
-          <span className="text-xl font-bold tracking-tight">Something Media</span>
+          <span className="text-xl font-bold tracking-tight text-white">Something Media</span>
         </Link>
         
         {/* Desktop Menu */}
@@ -64,7 +65,7 @@ const Navbar: React.FC = () => {
             <Link
               key={link.path}
               to={link.path}
-              className={`transition-all duration-300 hover:opacity-100 ${
+              className={`transition-all duration-300 hover:opacity-100 text-white ${
                 location.pathname === link.path
                   ? 'font-semibold opacity-100'
                   : 'opacity-70'
@@ -77,7 +78,7 @@ const Navbar: React.FC = () => {
           {/* Theme Toggle */}
           <button 
             onClick={toggleDarkMode}
-            className="opacity-70 hover:opacity-100 transition-all duration-300"
+            className="opacity-70 hover:opacity-100 transition-all duration-300 text-white"
             aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
           >
             {isDarkMode ? (
@@ -92,7 +93,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center md:hidden">
           <button 
             onClick={toggleDarkMode}
-            className="mr-4 opacity-70 hover:opacity-100 transition-all duration-300"
+            className="mr-4 opacity-70 hover:opacity-100 transition-all duration-300 text-white"
             aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
           >
             {isDarkMode ? (
@@ -104,7 +105,7 @@ const Navbar: React.FC = () => {
           
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="focus:outline-none"
+            className="focus:outline-none text-white"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
@@ -118,17 +119,17 @@ const Navbar: React.FC = () => {
       
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-background border-b border-border animate-fade-in">
+        <div className="md:hidden absolute top-full left-0 w-full bg-queenton-800 border-b border-border animate-fade-in">
           <div className="max-container py-4 flex flex-col space-y-4">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 onClick={closeMobileMenu}
-                className={`px-4 py-2 rounded-md transition-all duration-300 ${
+                className={`px-4 py-2 rounded-md transition-all duration-300 text-white ${
                   location.pathname === link.path
-                    ? 'bg-secondary font-semibold'
-                    : 'hover:bg-secondary/50'
+                    ? 'bg-queenton-700 font-semibold'
+                    : 'hover:bg-queenton-700/50'
                 }`}
               >
                 {link.name}

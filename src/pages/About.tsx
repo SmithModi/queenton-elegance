@@ -25,10 +25,10 @@ const About = () => {
             className="max-w-3xl mx-auto px-4"
           >
             <h1 className="text-4xl md:text-5xl font-semibold mb-6">
-              About Queenton Technology
+              About Something Media
             </h1>
             <p className="text-muted-foreground text-lg mb-8">
-              Innovative solutions for the modern digital landscape.
+              Crafting elegant, animated websites that captivate and engage.
             </p>
           </motion.div>
         </div>
@@ -49,10 +49,10 @@ const About = () => {
                 Our Mission
               </div>
               <h2 className="text-3xl md:text-4xl font-semibold">
-                Transforming ideas into exceptional digital experiences
+                Bringing your vision to life with style and impact
               </h2>
               <p className="text-muted-foreground">
-                At Queenton Technology, we're committed to delivering innovative, client-focused technology solutions that drive business growth and digital transformation. Our mission is to empower organizations with cutting-edge software that solves complex challenges and creates lasting value.
+                At Something Media, we're committed to creating visually stunning, intuitive designs that reflect your brand's identity. Our mission is to blend creativity and technical precision, delivering websites and software solutions that not only look great but also drive engagement and results.
               </p>
             </motion.div>
             
@@ -70,7 +70,7 @@ const About = () => {
                 Setting new standards in digital excellence
               </h2>
               <p className="text-muted-foreground">
-                We envision a future where technology seamlessly enhances human potential. Our goal is to be at the forefront of this evolution, creating software solutions that are not only technically superior but also intuitive, accessible, and impactful. We strive to be recognized globally as the partner of choice for organizations seeking digital excellence.
+                We envision a digital landscape where every business, regardless of size, has access to premium web solutions. Our goal is to transform how brands connect with their audience through innovative design, seamless functionality, and memorable user experiences that drive growth and success.
               </p>
             </motion.div>
           </div>
@@ -103,22 +103,22 @@ const About = () => {
               {
                 icon: <Award className="h-10 w-10" />,
                 title: 'Excellence',
-                description: 'We pursue the highest standards in everything we do, from code quality to client service.'
+                description: 'We pursue the highest standards in every project, delivering quality that exceeds expectations.'
               },
               {
                 icon: <Users className="h-10 w-10" />,
                 title: 'Collaboration',
-                description: 'We believe in the power of teamwork and partnership, both internally and with our clients.'
+                description: 'We work closely with our clients, turning their vision into reality through transparent partnership.'
               },
               {
                 icon: <TrendingUp className="h-10 w-10" />,
                 title: 'Innovation',
-                description: 'We constantly explore new technologies and approaches to deliver cutting-edge solutions.'
+                description: 'We embrace cutting-edge technologies to keep our clients ahead of the digital curve.'
               },
               {
                 icon: <MapPin className="h-10 w-10" />,
-                title: 'Integrity',
-                description: 'We operate with transparency, honesty, and ethical principles in all our interactions.'
+                title: 'Reliability',
+                description: 'We deliver on our promises, building trust through consistency and dependability.'
               }
             ].map((value, index) => (
               <motion.div
@@ -154,10 +154,10 @@ const About = () => {
               Our Journey
             </div>
             <h2 className="text-3xl md:text-4xl font-semibold mb-6">
-              A decade of digital innovation
+              Our path to digital excellence
             </h2>
             <p className="text-muted-foreground">
-              Since our founding, we've evolved and grown, consistently pushing the boundaries of what's possible in software development.
+              Though young, we've already accomplished so much on our journey to becoming a leading digital agency.
             </p>
           </motion.div>
           
@@ -168,44 +168,44 @@ const About = () => {
             {/* Timeline items */}
             <div className="space-y-12">
               <TimelineItem 
-                year="2014"
+                year="2022"
                 title="Company Founded"
-                description="Queenton Technology was established with a mission to provide cutting-edge software development services to businesses of all sizes."
+                description="Something Media was established with a mission to provide cutting-edge web development services to businesses of all sizes."
                 isLeft={true}
-              />
-              
-              <TimelineItem 
-                year="2016"
-                title="First Major Client"
-                description="Secured our first enterprise client and expanded our team to 25 talented developers, designers, and project managers."
-                isLeft={false}
-              />
-              
-              <TimelineItem 
-                year="2018"
-                title="International Expansion"
-                description="Opened our first international office, extending our services to clients across Europe and Asia."
-                isLeft={true}
-              />
-              
-              <TimelineItem 
-                year="2020"
-                title="Technology Innovation"
-                description="Launched our proprietary development framework, enhancing our ability to deliver scalable, high-performance applications."
-                isLeft={false}
               />
               
               <TimelineItem 
                 year="2022"
+                title="First Major Client"
+                description="Secured our first enterprise client and expanded our team of talented developers, designers, and project managers."
+                isLeft={false}
+              />
+              
+              <TimelineItem 
+                year="2023"
+                title="Service Expansion"
+                description="Added ERP Development and UI/UX Design services to our portfolio, offering comprehensive digital solutions."
+                isLeft={true}
+              />
+              
+              <TimelineItem 
+                year="2023"
+                title="Client Milestone"
+                description="Reached our 50th satisfied client, building a strong reputation for quality and reliability."
+                isLeft={false}
+              />
+              
+              <TimelineItem 
+                year="2024"
                 title="Industry Recognition"
-                description="Received multiple industry awards for our innovative approach to software development and client satisfaction."
+                description="Received recognition for our innovative approach to web development and client satisfaction."
                 isLeft={true}
               />
               
               <TimelineItem 
                 year="2024"
                 title="Present Day"
-                description="Now a team of 100+ experts, we continue to push the boundaries of digital innovation while maintaining our commitment to excellence."
+                description="Now serving 150+ clients, we continue to innovate and deliver exceptional digital experiences that drive results."
                 isLeft={false}
               />
             </div>
@@ -227,7 +227,7 @@ const About = () => {
               Our Team
             </div>
             <h2 className="text-3xl md:text-4xl font-semibold mb-6">
-              Meet the experts behind Queenton
+              Meet the experts behind Something Media
             </h2>
             <p className="text-muted-foreground">
               Our diverse team combines deep technical expertise with industry knowledge to deliver exceptional results.
@@ -243,17 +243,17 @@ const About = () => {
               },
               {
                 name: 'Morgan Chen',
-                role: 'CTO',
+                role: 'Lead Developer',
                 image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?fit=crop&w=800&h=800'
               },
               {
                 name: 'Taylor Rodriguez',
-                role: 'Lead Developer',
+                role: 'UI/UX Designer',
                 image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?fit=crop&w=800&h=800'
               },
               {
                 name: 'Jamie Wilson',
-                role: 'Design Director',
+                role: 'Project Manager',
                 image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?fit=crop&w=800&h=800'
               }
             ].map((member, index) => (
